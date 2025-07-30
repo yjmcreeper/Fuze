@@ -1,17 +1,18 @@
-#include <iostream>
-#include <deque>
-#include <queue>
-#include <set>
-#include <map>
-#include <expected>
-#include <vector>
-
-using namespace std;
+// ...existing code...
+#include "rb_tree.h"
 
 int main()
 {
-    set<int> first_set;
-    FILE* fp = fopen("./sed_try.cpp","r");
-    cout<<1<<endl;
+    RBTree<int> tree;
+    tree.insert(10);
+    tree.insert(20);
+    tree.insert(30);
+    tree.insert(15);
+
+    std::cout << "中序遍历: ";
+    tree.inorder();
+
+    std::cout << "查找20: " << (tree.search(20) ? "找到" : "未找到") << std::endl;
     return 0;
 }
+// ...existing code...
