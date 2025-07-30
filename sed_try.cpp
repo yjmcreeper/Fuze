@@ -12,7 +12,7 @@ int main()
     std::cout << "中序遍历: ";
     tree.inorder();
 
-    std::cout << "查找20: " << (tree.search(20) ? "找到" : "未找到") << std::endl;
+    std::cout << "查找25: " << (tree.search(25) ? "找到" : "未找到") << std::endl;
     return 0;
 }
 // ...existing code...
